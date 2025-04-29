@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Verification</title>
+</head>
+<body>
+    <script>
+		function RandomString() {
+			let chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			let rands = "";
+			for (let i = 0; i < 20; i++) {
+				rands += chars[Math.floor(Math.random() * chars.length)];
+			}
+			return rands;
+		}
+		function generateRandomCode(videos) {
+			let rand = RandomString();
+			let name = false;
+			videos.forEach(video => {
+				if(video.filePath === rand){
+					name = true;
+				}
+			});
+			if(name){
+				generateRandomCode(videos);
+			}
+			else{
+				return rand;
+			}
+		}
+		window.addEventListener('load', () => {
+			const container = document.getElementById('things');
+			fetch('data/films.json').then(response => response.json()).then(data => {
+				const random = generateRandomCode(data.videos);
+				container.appendChild(document.createTextNode(random));
+			});
+		});
+    </script>
+	<div id="things"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#videoContainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+#popup {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+	background:	rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.countdown {
+	padding-right: 10px;
+}
+#popup2 {
+	display: none;
+	position: fixed;
+	top: 80px;
+	left: 80px;
+	background:	rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+#backup {
+	margin-top: 20px; 
+}
+.text {
+    font-size: 60px;
+}

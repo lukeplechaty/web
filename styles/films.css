@@ -1,0 +1,129 @@
+body, html {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow-x: hidden;
+	background-color: gray;
+}
+#searchInput {
+	margin-bottom: 5px;
+}
+#videoLinks {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	gap: 10px;
+	justify-items: center;
+}
+@media (max-width: 2000px) {
+	#videoLinks {
+		grid-template-columns: repeat(9, 1fr);
+	}
+}
+@media (max-width: 1800px) {
+	#videoLinks {
+		grid-template-columns: repeat(8, 1fr);
+	}
+}
+@media (max-width: 1600px) {
+	#videoLinks {
+		grid-template-columns: repeat(7, 1fr);
+	}
+}
+@media (max-width: 1400px) {
+	#videoLinks {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+@media (max-width: 1200px) {
+	#videoLinks {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+@media (max-width: 1000px) {
+	#videoLinks {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media (max-width: 800px) {
+	#videoLinks {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media (max-width: 600px) {
+	#videoLinks {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width: 400px) {
+	#videoLinks {
+		grid-template-columns: 1fr;
+	}
+}
+.link-wrapper {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+.video-thumbnail {
+	width: 100px;
+	height: auto;
+	display: block;
+	margin: 0 auto 0px;
+	font-weight: bold;
+	font-size: 42px;
+}
+.video-link {
+	position: relative;
+	margin-bottom: 6px;
+}
+.video-link a {
+	margin-right: 5px;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.play-button {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	position: relative;
+	left: 5px;
+	top: 3px;
+}
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.diagonal-text {
+	position: absolute;
+	right: 0px;
+	left: 20px;
+	top: 20px;
+	display: inline-block;
+	transform: rotate(45deg);
+	color: red;
+	font-size: 42px;
+	text-shadow: black 0px 0px 8px;
+}

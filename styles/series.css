@@ -1,0 +1,75 @@
+body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-color: gray;
+}
+.last-episode {
+	margin-bottom: 10px;
+}
+.last-episode a {
+	margin-bottom: 0px;
+}
+.video-link {
+	margin-bottom: 0px;
+}
+.video-link div {
+	margin-bottom: 0px;
+}
+.video-link a {
+	color: black;
+	text-decoration: none;
+	margin-right: 5px;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+.play-button {
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+	top: 6px;
+}
+h1 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 4px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+.content {
+    padding-bottom: 4px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
