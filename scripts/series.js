@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
 				const startFromBeginningLink = document.createElement('a');
 				startFromBeginningLink.href = `/player.html?video=${video.filePath}&jsonfile=${jsonFile}&start=true`;
 				const playButton = document.createElement('img');
-				playButton.src = 'images/play-button.png';
+				playButton.src = 'play-button.png';
 				playButton.alt = 'Start from Beginning';
 				playButton.className = 'play-button';
 				const tooltipText = document.createElement('span');

@@ -1,7 +1,8 @@
 body {
 	font-family: Arial, sans-serif;
 	text-align: center;
-	background-color: gray;
+	background-color: black;
+	color: White;
 }
 .last-episode {
 	margin-bottom: 10px;
@@ -16,7 +17,7 @@ body {
 	margin-bottom: 0px;
 }
 .video-link a {
-	color: black;
+	color: White;
 	text-decoration: none;
 	margin-right: 5px;
 }
@@ -27,12 +28,12 @@ body {
 .tooltip .tooltiptext {
 	visibility: hidden;
 	width: 120px;
-	background-color: black;
-	color: #fff;
+	background-color: #333;
+	color: White;
 	border-radius: 5px;
 	padding: 5px;
 	position: absolute;
-	z-index: 1;
+	z-index: 100;
 	bottom: 125%;
 	left: 50%;
 	margin-left: -60px;
@@ -55,8 +56,8 @@ h1 {
 	margin-bottom: 10px;
 }
 .collapsible {
-    background-color: #eee;
-    color: #444;
+    background-color: black;
+    color: White;
     cursor: pointer;
     padding: 4px;
     width: 100%;
@@ -65,11 +66,11 @@ h1 {
     font-size: 20px;
 }
 .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: #222;
 }
 .content {
     padding-bottom: 4px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: black;
 }

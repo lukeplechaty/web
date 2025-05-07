@@ -6,7 +6,8 @@ html {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background-color: gray;
+	background-color: black;
+	color: White;
 }
 #searchInput {
   margin-bottom: 5px;
@@ -46,8 +47,8 @@ html {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: black;
-  color: #fff;
+  background-color: lightgray;
+  color: black;
   border-radius: 5px;
   padding: 5px;
   position: absolute;
